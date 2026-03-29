@@ -1,0 +1,33 @@
+Este é o Template_Project. Ele serve como ponto de partida para os projetos. Para iniciar um projeto novo, siga o passo-a-passo abaixo:
+
+1 - Criar o repositório no GitHub web
+2 - Clonar o repositório pelo GitHub desktop --> Colocar na mesma pasta dos outros projetos
+3 - Abrir o projeto no VS Code
+4 - Rodar os seguintes comandos no terminal do VS Code:
+	1 -> cd Template_Project
+	2 -> git archive --format=zip HEAD -o ../[nome_do_repositório]/template.zip
+	3 -> cd ../[nome_do_repositório]
+	4 -> Expand-Archive template.zip -DestinationPath . -Force
+	5 -> Remove-Item template.zip
+	6 -> git add .
+	7 -> git commit -m "First Commit - Cloned files from Template_Project"
+	8 -> git push
+5 - Ainda no terminal, rodar npm i --f para atualizar os pacotes
+6 - npm run dev já deve funcionar
+
+This is the Template_Project. It works as a starting point for the projects. To initialize a new project, follow the steps bellow:
+
+1 - Create the repository on GitHub web
+2 - Clone the repository through GitHub desktop --> Into the same folder where the other projects are
+3 - Open the project in VS Code
+4 - Run the following commands on VS Code terminal:
+	1 -> cd Template_Project
+	2 -> git archive --format=zip HEAD -o ../[repository_name]/template.zip
+	3 -> cd ../[repository_name]
+	4 -> Expand-Archive template.zip -DestinationPath . -Force
+	5 -> Remove-Item template.zip
+	6 -> git add .
+	7 -> git commit -m "First Commit - Cloned files from Template_Project"
+	8 -> git push
+5 - On the terminal, run npm i --f to update the packages
+6 - npm run dev should work

@@ -4,7 +4,7 @@ Este é o Template_Project. Ele serve como ponto de partida para os projetos. Pa
 2 - Clonar o repositório pelo GitHub desktop --> Colocar na mesma pasta dos outros projetos
 3 - Abrir o projeto no VS Code
 4 - Rodar os seguintes comandos no terminal do VS Code:
-	1 -> cd Template_Project
+	1 -> cd ../Template_Project
 	2 -> git archive --format=zip HEAD -o ../[nome_do_repositório]/template.zip
 	3 -> cd ../[nome_do_repositório]
 	4 -> Expand-Archive template.zip -DestinationPath . -Force

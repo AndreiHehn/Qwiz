@@ -5,16 +5,31 @@
 }
 
 body {
+  background-color: var(--app-primary);
 }
 
-.light-theme {
+.app-theme {
+  --app-primary: #9987ff;
+  --app-secondary: #5d4eb1;
+  --app-tertiary: #4b3aaa;
+  --modal-background: #30046b;
+  --sidebar-color: #30046b;
+
+  --text-primary: #ffffff;
 }
 
 .dark-theme {
+  --app-primary: #464453;
+  --app-secondary: #7a768e;
+  --app-tertiary: #4f4e5a;
+  --modal-background: #1e1d20;
+  --sidebar-color: #1e1d20;
+
+  --text-primary: #ffffff;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }

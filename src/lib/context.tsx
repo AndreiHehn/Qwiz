@@ -13,20 +13,47 @@ interface AppContextProviderProps {
   children: ReactNode;
 }
 interface AppContextProps {
-  userName: string;
-  setUserName: Dispatch<SetStateAction<string>>;
+  theme: string;
+  setTheme: Dispatch<SetStateAction<string>>;
+  language: string;
+  setLanguage: Dispatch<SetStateAction<string>>;
+  showModalSettings: boolean;
+  setShowModalSettings: Dispatch<SetStateAction<boolean>>;
+  settingsChanged: boolean;
+  setSettingsChanged: Dispatch<SetStateAction<boolean>>;
+  resetSettings: boolean;
+  setResetSettings: Dispatch<SetStateAction<boolean>>;
+  quitSettings: boolean;
+  setQuitSettings: Dispatch<SetStateAction<boolean>>;
 }
 
 export function AppContextProvider({ children }: AppContextProviderProps) {
-  const [userName, setUserName] = useState(() => {
-    return localStorage.getItem("[app_name]_username") || "Player 001";
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("qwiz_theme") || "app";
   });
+  const [language, setLanguage] = useState(
+    localStorage.getItem("qwiz_language") || "en",
+  );
+  const [showModalSettings, setShowModalSettings] = useState(false);
+  const [settingsChanged, setSettingsChanged] = useState(false);
+  const [resetSettings, setResetSettings] = useState(false);
+  const [quitSettings, setQuitSettings] = useState(false);
 
   return (
     <AppContext.Provider
       value={{
-        userName,
-        setUserName,
+        theme,
+        setTheme,
+        language,
+        setLanguage,
+        showModalSettings,
+        setShowModalSettings,
+        settingsChanged,
+        setSettingsChanged,
+        resetSettings,
+        setResetSettings,
+        quitSettings,
+        setQuitSettings,
       }}
     >
       {children}

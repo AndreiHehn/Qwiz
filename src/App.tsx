@@ -1,8 +1,85 @@
+import { useContext, useEffect } from "react";
 import "./App.css";
-import { Button } from "./generic/Button";
+import SideBar from "./components/SideBar";
+import { AppContext } from "./lib/context";
+import ModalSettings from "./components/ModalSettings";
+import { ModalGeneric } from "./generic/GenericModal";
+import { useTranslation } from "react-i18next";
+import { ModalMessage } from "./generic/ModalMessage";
 
 function App() {
-  return <Button color="#44252A">Teste</Button>;
+  const {
+    showModalSettings,
+    setShowModalSettings,
+    theme,
+    resetSettings,
+    setResetSettings,
+    settingsChanged,
+    quitSettings,
+    setQuitSettings,
+  } = useContext(AppContext);
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.classList.remove("light-theme", "dark-theme");
+
+    if (theme === "system") {
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      root.classList.add(prefersDark ? "dark-theme" : "light-theme");
+    } else {
+      root.classList.add(`${theme}-theme`);
+    }
+  }, [theme]);
+
+  function VerifySettings() {
+    console.log(settingsChanged);
+    if (settingsChanged) {
+      setQuitSettings(true);
+    } else {
+      setShowModalSettings(false);
+    }
+  }
+  return (
+    <>
+      <SideBar></SideBar>
+      {showModalSettings && (
+        <ModalGeneric
+          functionCloseModal={() => VerifySettings()}
+          mobileFullScreen
+          top="50%"
+          left="50%"
+          title={t("Settings")}
+          width="400px"
+        >
+          <ModalSettings />
+        </ModalGeneric>
+      )}
+      {resetSettings && (
+        <ModalMessage
+          textMessage={t("Do you want to reset the settings?")}
+          onClick1={() => setResetSettings(false)}
+          textButton1={t("Cancel")}
+          onClick2={() => (
+            setResetSettings(false),
+            setShowModalSettings(false)
+          )}
+          textButton2={t("Yes")}
+        ></ModalMessage>
+      )}
+      {quitSettings && (
+        <ModalMessage
+          textMessage={t("Do you want to quit without saving?")}
+          onClick1={() => setQuitSettings(false)}
+          textButton1={t("Cancel")}
+          onClick2={() => (setQuitSettings(false), setShowModalSettings(false))}
+          textButton2={t("Yes")}
+        ></ModalMessage>
+      )}
+    </>
+  );
 }
 
 export default App;

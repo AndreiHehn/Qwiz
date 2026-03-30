@@ -24,7 +24,7 @@ export const Container = styled.div<Props>`
 
   .button-text {
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: ${(props) => props.mainColor};
   }
 

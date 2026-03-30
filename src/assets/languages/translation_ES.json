@@ -1,1 +1,16 @@
-{}
+{
+  "Categories": "Categorias",
+  "Settings": "Configuracciones",
+  "Language Selection": "Selección de Idioma",
+  "Theme Selection": "Selección de Tema",
+  "Qwiz Theme": "Tema del Qwiz",
+  "Dark Theme": "Tema Oscuro",
+  "System Theme": "Tema del Sistema",
+  "Reset": "Redefinir",
+  "Save": "Guardar",
+  "Cancel": "Cancelar",
+  "Yes": "Si",
+  "No": "No",
+  "Do you want to reset the settings?": "¿Deseas redefinir las configuracciones?",
+  "Do you want to quit without saving?": "¿Deseas salir sin guardar?"
+}

@@ -1,1 +1,16 @@
-{}
+{
+  "Categories": "Categories",
+  "Settings": "Settings",
+  "Language Selection": "Language Selection",
+  "Theme Selection": "Theme Selection",
+  "Qwiz Theme": "Qwiz Theme",
+  "Dark Theme": "Dark Theme",
+  "System Theme": "System Theme",
+  "Reset": "Reset",
+  "Save": "Save",
+  "Cancel": "Cancel",
+  "Yes": "Yes",
+  "No": "No",
+  "Do you want to reset the settings?": "Do you want to reset the settings?",
+  "Do you want to quit without saving?": "Do you want to quit without saving?"
+}

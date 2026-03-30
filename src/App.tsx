@@ -6,6 +6,7 @@ import ModalSettings from "./components/ModalSettings";
 import { ModalGeneric } from "./generic/GenericModal";
 import { useTranslation } from "react-i18next";
 import { ModalMessage } from "./generic/ModalMessage";
+import Home from "./components/Home";
 
 function App() {
   const {
@@ -45,6 +46,7 @@ function App() {
   return (
     <>
       <SideBar></SideBar>
+      <Home></Home>
       {showModalSettings && (
         <ModalGeneric
           functionCloseModal={() => VerifySettings()}

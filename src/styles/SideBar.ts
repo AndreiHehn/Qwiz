@@ -12,7 +12,7 @@ export const Container = styled.aside<Props>`
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  position: absolute;
 
   .sidebar-logo {
     margin-top: 5px;

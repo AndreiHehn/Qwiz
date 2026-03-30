@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { darken, lighten } from "polished";
 
 interface Props {
   color: string;
@@ -10,16 +11,7 @@ interface Props {
 
 export const Container = styled.button<Props>`
   color: #ffffff;
-  background-color: ${({ color }) =>
-    color == "red"
-      ? "#FF0000"
-      : color == "blue"
-      ? "#0963CE"
-      : color == "green"
-      ? "#06BD70"
-      : color == "gray"
-      ? "#71717A"
-      : null};
+  background-color: ${(props) => props.color};
 
   border: none;
   border-radius: ${(props) => props.$borderRadius};
@@ -37,29 +29,11 @@ export const Container = styled.button<Props>`
   transition: 0.5s;
 
   &:hover {
-    background-color: ${({ color }) =>
-      color == "red"
-        ? "#AA0505"
-        : color == "blue"
-        ? "#022F64"
-        : color == "green"
-        ? "#037746"
-        : color == "gray"
-        ? "#2f3640"
-        : null};
+    background-color: ${(props) => darken(0.15, props.color)};
   }
 
   &:disabled {
-    background-color: ${({ color }) =>
-      color == "red"
-        ? "#fa8989"
-        : color == "blue"
-        ? "#a3a2fc"
-        : color == "green"
-        ? "#abffb6"
-        : color == "gray"
-        ? "#e8e8e8"
-        : null};
+    background-color: ${(props) => lighten(0.15, props.color)};
 
     cursor: not-allowed;
   }

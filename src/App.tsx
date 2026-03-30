@@ -1,7 +1,8 @@
 import "./App.css";
+import { Button } from "./generic/Button";
 
 function App() {
-  return <>The APP starts here!</>;
+  return <Button color="#44252A">Teste</Button>;
 }
 
 export default App;

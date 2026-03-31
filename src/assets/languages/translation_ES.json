@@ -13,5 +13,11 @@
   "No": "No",
   "Do you want to reset the settings?": "¿Deseas redefinir las configuracciones?",
   "Do you want to quit without saving?": "¿Deseas salir sin guardar?",
-  "Welcome to Qwiz! Select a category on the left side bar to get started!": "Bienvenido al Qwiz! Seleccione una categoria en el menu a la izquierda para empezar!"
+  "Welcome to Qwiz! Select a category on the left side bar to get started!": "Bienvenido al Qwiz! Seleccione una categoria en el menu a la izquierda para empezar!",
+  "Sports": "Deportes",
+  "Geography": "Geografia",
+  "Sciences": "Ciencias",
+  "History": "Historia",
+  "Entertainment": "Entretenimiento",
+  "Arts": "Artes"
 }

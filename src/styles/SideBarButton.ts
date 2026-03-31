@@ -8,7 +8,7 @@ export const Container = styled.div<Props>`
   height: 40px;
   background-color: #fff;
   border-radius: 20px;
-  border: 2px solid ${(props) => props.mainColor};
+  border: 3px solid ${(props) => props.mainColor};
   display: flex;
   align-items: center;
   cursor: pointer;

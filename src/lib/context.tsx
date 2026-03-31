@@ -25,6 +25,8 @@ interface AppContextProps {
   setResetSettings: Dispatch<SetStateAction<boolean>>;
   quitSettings: boolean;
   setQuitSettings: Dispatch<SetStateAction<boolean>>;
+  selectedCategory: string;
+  setSelectedCategory: Dispatch<SetStateAction<string>>;
 }
 
 export function AppContextProvider({ children }: AppContextProviderProps) {
@@ -38,6 +40,7 @@ export function AppContextProvider({ children }: AppContextProviderProps) {
   const [settingsChanged, setSettingsChanged] = useState(false);
   const [resetSettings, setResetSettings] = useState(false);
   const [quitSettings, setQuitSettings] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   return (
     <AppContext.Provider
@@ -54,6 +57,8 @@ export function AppContextProvider({ children }: AppContextProviderProps) {
         setResetSettings,
         quitSettings,
         setQuitSettings,
+        selectedCategory,
+        setSelectedCategory,
       }}
     >
       {children}

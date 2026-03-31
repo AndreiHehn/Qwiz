@@ -24,11 +24,14 @@ export const Container = styled.aside<Props>`
   .sidebar-categories {
     display: ${(props) => (props.isOpen ? "flex" : "none")};
     flex-direction: column;
+    gap: 10px;
   }
 
   .categories-title {
     color: #fff;
     font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
   }
 
   .sidebar-footer {

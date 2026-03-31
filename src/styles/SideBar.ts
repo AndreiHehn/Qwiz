@@ -19,6 +19,7 @@ export const Container = styled.aside<Props>`
     margin-bottom: 20px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
   }
 
   .sidebar-categories {

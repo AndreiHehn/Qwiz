@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.article`
+interface Props {
+  categoryColor: string;
+}
+
+export const Container = styled.article<Props>`
   width: 100dvw;
   height: 100dvh;
   display: flex;
@@ -19,5 +23,18 @@ export const Container = styled.article`
     color: #fff;
     max-width: 900px;
     text-align: center;
+  }
+
+  .selected-category {
+    color: ${(props) => props.categoryColor};
+  }
+
+  .category-icon {
+    margin-bottom: 50px;
+    width: 250px;
+    height: 250px;
+    path {
+      fill: ${(props) => props.categoryColor};
+    }
   }
 `;

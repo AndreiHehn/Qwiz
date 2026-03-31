@@ -18,7 +18,11 @@ export default function SideBar() {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <img className="sidebar-logo" src={SideBarLogo} />
+      <img
+        className="sidebar-logo"
+        src={SideBarLogo}
+        onClick={() => setSelectedCategory("")}
+      />
       <section className="sidebar-categories">
         <h2 className="categories-title">{t("Categories")}</h2>
         {Qwiz_Categories.map((cat, index) => (

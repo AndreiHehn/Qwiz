@@ -14,8 +14,7 @@ import PaletteIcon from "../assets/icons/PaletteIcon.svg?react";
 
 export default function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { setShowModalSettings, selectedCategory, setSelectedCategory } =
-    useContext(AppContext);
+  const { setShowModalSettings, setSelectedCategory } = useContext(AppContext);
   const { t } = useTranslation();
 
   const categoriesNames = [

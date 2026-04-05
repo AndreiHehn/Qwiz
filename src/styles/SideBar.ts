@@ -13,6 +13,7 @@ export const Container = styled.aside<Props>`
   align-items: center;
   flex-direction: column;
   position: absolute;
+  user-select: none;
 
   .sidebar-logo {
     margin-top: 5px;

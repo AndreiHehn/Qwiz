@@ -4,10 +4,11 @@ import { useTranslation } from "react-i18next";
 import { useContext } from "react";
 import { AppContext } from "../lib/context";
 import { Qwiz_Categories } from "../lib/categories";
+import { Button } from "../generic/Button";
 
 export default function Home() {
   const { t } = useTranslation();
-  const { selectedCategory } = useContext(AppContext);
+  const { selectedCategory, setActivePage } = useContext(AppContext);
 
   const CategoryColor =
     Qwiz_Categories.find((cat) => cat.name === selectedCategory)?.color || "";
@@ -35,6 +36,17 @@ export default function Home() {
             {". "}
             {t("Are you ready?")}
           </h1>
+          {
+            <Button
+              color={CategoryColor}
+              height="40px"
+              width="140px"
+              borderRadius="10px"
+              functionButton={() => setActivePage("Theme Selection")}
+            >
+              {t("Start Game")}
+            </Button>
+          }
         </>
       )}
     </Container>

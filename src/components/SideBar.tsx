@@ -9,7 +9,8 @@ import { Qwiz_Categories } from "../lib/categories";
 
 export default function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { setShowModalSettings, setSelectedCategory } = useContext(AppContext);
+  const { setShowModalSettings, setSelectedCategory, setActivePage } =
+    useContext(AppContext);
   const { t } = useTranslation();
 
   return (
@@ -21,7 +22,7 @@ export default function SideBar() {
       <img
         className="sidebar-logo"
         src={SideBarLogo}
-        onClick={() => setSelectedCategory("")}
+        onClick={() => (setSelectedCategory(""), setActivePage("Home"))}
       />
       <section className="sidebar-categories">
         <h2 className="categories-title">{t("Categories")}</h2>
@@ -31,7 +32,10 @@ export default function SideBar() {
             mainColor={cat.color}
             buttonIcon={cat.icon}
             buttonText={t(cat.name)}
-            onClickFunction={() => setSelectedCategory(cat.name)}
+            onClickFunction={() => (
+              setSelectedCategory(cat.name),
+              setActivePage("Home")
+            )}
           />
         ))}
       </section>

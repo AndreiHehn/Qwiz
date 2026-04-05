@@ -21,7 +21,7 @@ export const Container = styled.article<Props>`
     font-size: 28px;
     font-weight: 800;
     color: #fff;
-    max-width: 900px;
+    max-width: 1100px;
     text-align: center;
   }
 
@@ -36,5 +36,12 @@ export const Container = styled.article<Props>`
     path {
       fill: ${(props) => props.categoryColor};
     }
+  }
+
+  button {
+    margin-top: 50px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    font-weight: 600;
   }
 `;

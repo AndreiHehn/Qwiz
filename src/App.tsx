@@ -6,7 +6,8 @@ import ModalSettings from "./components/ModalSettings";
 import { ModalGeneric } from "./generic/GenericModal";
 import { useTranslation } from "react-i18next";
 import { ModalMessage } from "./generic/ModalMessage";
-import Home from "./components/Home";
+import Home from "./pages/Home";
+import ThemeSelection from "./pages/ThemeSelection";
 
 function App() {
   const {
@@ -18,6 +19,7 @@ function App() {
     settingsChanged,
     quitSettings,
     setQuitSettings,
+    activePage,
   } = useContext(AppContext);
   const { t } = useTranslation();
 
@@ -46,7 +48,8 @@ function App() {
   return (
     <>
       <SideBar></SideBar>
-      <Home></Home>
+      {activePage == "Home" && <Home></Home>}
+      {activePage == "Theme Selection" && <ThemeSelection></ThemeSelection>}
       {showModalSettings && (
         <ModalGeneric
           functionCloseModal={() => VerifySettings()}

@@ -93,7 +93,11 @@ export default function ModalSettings() {
         >
           {t("Reset")}
         </Button>
-        <Button color="green" borderRadius="4px" functionButton={SaveSettings}>
+        <Button
+          color="#00c424"
+          borderRadius="4px"
+          functionButton={SaveSettings}
+        >
           {t("Save")}
         </Button>
       </footer>

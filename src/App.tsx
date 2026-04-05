@@ -20,6 +20,10 @@ function App() {
     quitSettings,
     setQuitSettings,
     activePage,
+    confirmTheme,
+    setConfirmTheme,
+    selectedTheme,
+    setSelectedTheme,
   } = useContext(AppContext);
   const { t } = useTranslation();
 
@@ -80,6 +84,20 @@ function App() {
           onClick1={() => setQuitSettings(false)}
           textButton1={t("Cancel")}
           onClick2={() => (setQuitSettings(false), setShowModalSettings(false))}
+          textButton2={t("Yes")}
+        ></ModalMessage>
+      )}
+      {confirmTheme && (
+        <ModalMessage
+          textMessage={
+            t("Do you want to start the game with the theme") +
+            " " +
+            selectedTheme +
+            "?"
+          }
+          onClick1={() => (setSelectedTheme(""), setConfirmTheme(false))}
+          textButton1={t("Cancel")}
+          onClick2={() => setConfirmTheme(false)}
           textButton2={t("Yes")}
         ></ModalMessage>
       )}

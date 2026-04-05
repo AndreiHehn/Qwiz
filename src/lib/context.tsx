@@ -29,6 +29,10 @@ interface AppContextProps {
   setSelectedCategory: Dispatch<SetStateAction<string>>;
   activePage: string;
   setActivePage: Dispatch<SetStateAction<string>>;
+  confirmTheme: boolean;
+  setConfirmTheme: Dispatch<SetStateAction<boolean>>;
+  selectedTheme: string;
+  setSelectedTheme: Dispatch<SetStateAction<string>>;
 }
 
 export function AppContextProvider({ children }: AppContextProviderProps) {
@@ -44,6 +48,8 @@ export function AppContextProvider({ children }: AppContextProviderProps) {
   const [quitSettings, setQuitSettings] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [activePage, setActivePage] = useState("Home");
+  const [confirmTheme, setConfirmTheme] = useState(false);
+  const [selectedTheme, setSelectedTheme] = useState("");
 
   return (
     <AppContext.Provider
@@ -64,6 +70,10 @@ export function AppContextProvider({ children }: AppContextProviderProps) {
         setSelectedCategory,
         activePage,
         setActivePage,
+        confirmTheme,
+        setConfirmTheme,
+        selectedTheme,
+        setSelectedTheme,
       }}
     >
       {children}

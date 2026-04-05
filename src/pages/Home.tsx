@@ -40,7 +40,7 @@ export default function Home() {
             <Button
               color={CategoryColor}
               height="40px"
-              width="140px"
+              width="160px"
               borderRadius="10px"
               functionButton={() => setActivePage("Theme Selection")}
             >

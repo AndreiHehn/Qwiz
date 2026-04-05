@@ -4,4 +4,5 @@ export type CategoryName =
   | "Sciences"
   | "History"
   | "Entertainment"
-  | "Arts";
+  | "Arts"
+  | "Languages";

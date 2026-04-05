@@ -4,8 +4,8 @@ interface Props {
   mainColor: string;
 }
 export const Container = styled.div<Props>`
-  width: 210px;
-  height: 40px;
+  width: 300px;
+  height: 60px;
   background-color: #fff;
   border-radius: 20px;
   border: 3px solid ${(props) => props.mainColor};
@@ -24,11 +24,12 @@ export const Container = styled.div<Props>`
 
   .button-text {
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 20px;
     color: ${(props) => props.mainColor};
   }
 
   &:hover {
-    background-color: #cbcbcb;
+    transform: scale(1.05);
+    transition: 0.5s;
   }
 `;

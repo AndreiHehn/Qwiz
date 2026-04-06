@@ -9,13 +9,21 @@ import { Qwiz_Categories } from "../lib/categories";
 
 export default function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { setShowModalSettings, setSelectedCategory, setActivePage } =
-    useContext(AppContext);
+  const {
+    setShowModalSettings,
+    selectedCategory,
+    setSelectedCategory,
+    setActivePage,
+  } = useContext(AppContext);
   const { t } = useTranslation();
+
+  const CategoryColor =
+    Qwiz_Categories.find((cat) => cat.name === selectedCategory)?.color || "";
 
   return (
     <Container
       isOpen={isOpen}
+      borderColor={selectedCategory != "" ? CategoryColor : "#FFFFFF"}
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >

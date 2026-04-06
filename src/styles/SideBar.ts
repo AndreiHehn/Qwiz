@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface Props {
   isOpen: boolean;
+  borderColor: string;
 }
 
 export const Container = styled.aside<Props>`
@@ -14,6 +15,7 @@ export const Container = styled.aside<Props>`
   flex-direction: column;
   position: absolute;
   user-select: none;
+  border-right: 3px solid ${(props) => props.borderColor};
 
   .sidebar-logo {
     margin-top: 5px;

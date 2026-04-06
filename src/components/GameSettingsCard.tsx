@@ -1,11 +1,10 @@
-import React, { useContext, type ReactNode } from "react";
+import { useContext } from "react";
 import { Container } from "../styles/GameSettingsCard";
 import { Qwiz_Categories } from "../lib/categories";
 import { AppContext } from "../lib/context";
 
 interface Props {
   onClickFunction: (e: unknown) => void;
-  cardIcon: string | React.ComponentType | ReactNode;
   cardTitle: string;
   cardDescription: string;
   isSelected: boolean;
@@ -14,7 +13,6 @@ interface Props {
 export default function GameSettingsCard({
   cardTitle,
   cardDescription,
-  cardIcon,
   isSelected,
   onClickFunction,
 }: Props) {
@@ -30,7 +28,6 @@ export default function GameSettingsCard({
       isSelected={isSelected}
     >
       <div className="card-header">
-        {React.createElement(cardIcon as React.ComponentType)}
         <h2 className="card-title">{cardTitle}</h2>
       </div>
       <h3 className="card-description">{cardDescription}</h3>

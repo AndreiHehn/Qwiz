@@ -27,6 +27,8 @@ function App() {
     setSelectedTheme,
     gameSettings,
     setGameSettings,
+    setSelectedDifficulty,
+    setSelectedGameLenght,
   } = useContext(AppContext);
   const { t } = useTranslation();
 
@@ -108,7 +110,9 @@ function App() {
         <ModalGeneric
           functionCloseModal={() => (
             setGameSettings(false),
-            setSelectedTheme("")
+            setSelectedTheme(""),
+            setSelectedDifficulty(""),
+            setSelectedGameLenght("")
           )}
           mobileFullScreen
           top="50%"

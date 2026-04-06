@@ -24,5 +24,13 @@
   "You have selected the category": "Seleccionaste la categoria",
   "Are you ready?": "¿Estás listo?",
   "Start Game": "Empezar Juego",
-  "Do you want to start the game with the theme": "¿Deseas empezar el juego con el tema"
+  "Do you want to start the game with the theme": "¿Deseas empezar el juego con el tema",
+  "Difficulty Selection": "Selección de Dificuldad",
+  "Game Lenght": "Duración del Juego",
+  "20s per Question": "20s por Pregunta",
+  "14s per Question": "14s por Pregunta",
+  "08s per Question": "08s por Pregunta",
+  "05 Questions": "05 Preguntas",
+  "10 Questions": "10 Preguntas",
+  "20 Questions": "20 Preguntas"
 }

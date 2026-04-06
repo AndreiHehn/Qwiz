@@ -24,5 +24,18 @@
   "You have selected the category": "You have selected the category",
   "Are you ready?": "Are you ready?",
   "Start Game": "Start Game",
-  "Do you want to start the game with the theme": "Do you want to start the game with the theme"
+  "Do you want to start the game with the theme": "Do you want to start the game with the theme",
+  "Easy": "Easy",
+  "Medium": "Medium",
+  "Hard": "Hard",
+  "Short": "Short",
+  "Long": "Long",
+  "Difficulty Selection": "Difficulty Selection",
+  "Game Lenght": "Game Lenght Selection",
+  "20s per Question": "20s per Question",
+  "14s per Question": "14s per Question",
+  "08s per Question": "08s per Question",
+  "05 Questions": "05 Questions",
+  "10 Questions": "10 Questions",
+  "20 Questions": "20 Questions"
 }

@@ -24,5 +24,18 @@
   "You have selected the category": "Você selecionou a categoria",
   "Are you ready?": "Você está pronto?",
   "Start Game": "Iniciar Jogo",
-  "Do you want to start the game with the theme": "Deseja iniciar o jogo com o tema"
+  "Do you want to start the game with the theme": "Deseja iniciar o jogo com o tema",
+  "Easy": "Fácil",
+  "Medium": "Médio",
+  "Hard": "Difícil",
+  "Short": "Curta",
+  "Long": "Longa",
+  "Difficulty Selection": "Seleção de Dificuldade",
+  "Game Lenght": "Duração da Partida",
+  "20s per Question": "20s por Pergunta",
+  "14s per Question": "14s por Pergunta",
+  "08s per Question": "08s por Pergunta",
+  "05 Questions": "05 Perguntas",
+  "10 Questions": "10 Perguntas",
+  "20 Questions": "20 Perguntas"
 }

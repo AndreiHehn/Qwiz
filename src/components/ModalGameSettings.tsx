@@ -43,7 +43,7 @@ export default function ModalGameSettings() {
         ></GameSettingsCard>
       </section>
       <div className="section-separator">
-        <h2 className="section-title">{t("Game Lenght Selection")}</h2>
+        <h2 className="section-title">{t("Game Lenght")}</h2>
         <hr className="section-line" />
       </div>
       <section className="game-lenght-selection">

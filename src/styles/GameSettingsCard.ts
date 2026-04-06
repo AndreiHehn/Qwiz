@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface Props {
   isSelected: boolean;
+  categoryColor: string;
 }
 
 export const Container = styled.div<Props>`
@@ -11,7 +12,8 @@ export const Container = styled.div<Props>`
   border-radius: 10px;
   cursor: pointer;
   padding: 10px 5px 5px;
-  border: ${(props) => props.isSelected && "3px solid #3cef51"};
+  border: ${(props) =>
+    props.isSelected ? `3px solid ${props.categoryColor}` : "none"};
 
   &:hover {
     transform: scale(1.05);

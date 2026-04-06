@@ -9,12 +9,15 @@ import { ModalMessage } from "./generic/ModalMessage";
 import Home from "./pages/Home";
 import ThemeSelection from "./pages/ThemeSelection";
 import ModalGameSettings from "./components/ModalGameSettings";
+import i18n from "./lib/language";
 
 function App() {
   const {
     showModalSettings,
     setShowModalSettings,
+    setTheme,
     theme,
+    setLanguage,
     resetSettings,
     setResetSettings,
     settingsChanged,
@@ -46,8 +49,17 @@ function App() {
     }
   }, [theme]);
 
+  function ResetDefaults() {
+    setTheme("app");
+    setLanguage("en");
+
+    localStorage.setItem("qwiz_theme", "app");
+    localStorage.setItem("qwiz_theme", "en");
+
+    i18n.changeLanguage("en");
+  }
+
   function VerifySettings() {
-    console.log(settingsChanged);
     if (settingsChanged) {
       setQuitSettings(true);
     } else {
@@ -78,6 +90,7 @@ function App() {
           textButton1={t("Cancel")}
           onClick2={() => (
             setResetSettings(false),
+            ResetDefaults(),
             setShowModalSettings(false)
           )}
           textButton2={t("Yes")}

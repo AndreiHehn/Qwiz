@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { ModalMessage } from "./generic/ModalMessage";
 import Home from "./pages/Home";
 import ThemeSelection from "./pages/ThemeSelection";
+import ModalGameSettings from "./components/ModalGameSettings";
 
 function App() {
   const {
@@ -24,6 +25,8 @@ function App() {
     setConfirmTheme,
     selectedTheme,
     setSelectedTheme,
+    gameSettings,
+    setGameSettings,
   } = useContext(AppContext);
   const { t } = useTranslation();
 
@@ -97,9 +100,24 @@ function App() {
           }
           onClick1={() => (setSelectedTheme(""), setConfirmTheme(false))}
           textButton1={t("Cancel")}
-          onClick2={() => setConfirmTheme(false)}
+          onClick2={() => (setConfirmTheme(false), setGameSettings(true))}
           textButton2={t("Yes")}
         ></ModalMessage>
+      )}
+      {gameSettings && (
+        <ModalGeneric
+          functionCloseModal={() => (
+            setGameSettings(false),
+            setSelectedTheme("")
+          )}
+          mobileFullScreen
+          top="50%"
+          left="50%"
+          title={t(selectedTheme)}
+          width="600px"
+        >
+          <ModalGameSettings />
+        </ModalGeneric>
       )}
     </>
   );

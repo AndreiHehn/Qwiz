@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import ThemeSelection from "./pages/ThemeSelection";
 import ModalGameSettings from "./components/ModalGameSettings";
 import i18n from "./lib/language";
+import Game from "./pages/Game";
 
 function App() {
   const {
@@ -71,6 +72,7 @@ function App() {
       <SideBar></SideBar>
       {activePage == "Home" && <Home></Home>}
       {activePage == "Theme Selection" && <ThemeSelection></ThemeSelection>}
+      {activePage == "Game" && <Game></Game>}
       {showModalSettings && (
         <ModalGeneric
           functionCloseModal={() => VerifySettings()}

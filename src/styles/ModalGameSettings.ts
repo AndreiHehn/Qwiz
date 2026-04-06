@@ -26,10 +26,9 @@ export const Container = styled.div`
       margin-bottom: 10px;
     }
   }
-  .footer-buttons {
+  .footer-button {
     display: flex;
-    justify-content: end;
-    margin-top: 10px;
-    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
   }
 `;

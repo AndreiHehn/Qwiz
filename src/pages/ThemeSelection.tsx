@@ -8,8 +8,12 @@ import { Qwiz_Categories } from "../lib/categories";
 import { useTranslation } from "react-i18next";
 
 export default function ThemeSelection() {
-  const { selectedCategory, setSelectedTheme, setConfirmTheme } =
-    useContext(AppContext);
+  const {
+    selectedCategory,
+    setSelectedTheme,
+    setConfirmTheme,
+    setSelectedThemeID,
+  } = useContext(AppContext);
   const { t } = useTranslation();
 
   const themes = selectedCategory
@@ -30,6 +34,7 @@ export default function ThemeSelection() {
             buttonText={theme.name}
             onClickFunction={() => (
               setSelectedTheme(theme.name),
+              setSelectedThemeID(theme.id),
               setConfirmTheme(true)
             )}
           ></ThemeButton>

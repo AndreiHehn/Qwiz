@@ -6,3 +6,11 @@ export type CategoryName =
   | "Entertainment"
   | "Arts"
   | "Languages";
+
+export type Question = {
+  id: string;
+  text: string;
+  correctAnswer: string;
+  wrongAnswers: string[];
+  image?: string;
+};

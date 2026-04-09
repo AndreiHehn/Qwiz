@@ -29,6 +29,7 @@ function App() {
     setConfirmTheme,
     selectedTheme,
     setSelectedTheme,
+    setSelectedThemeID,
     gameSettings,
     setGameSettings,
     setSelectedDifficulty,
@@ -115,7 +116,11 @@ function App() {
             selectedTheme +
             "?"
           }
-          onClick1={() => (setSelectedTheme(""), setConfirmTheme(false))}
+          onClick1={() => (
+            setSelectedTheme(""),
+            setSelectedThemeID(""),
+            setConfirmTheme(false)
+          )}
           textButton1={t("Cancel")}
           onClick2={() => (setConfirmTheme(false), setGameSettings(true))}
           textButton2={t("Yes")}
@@ -126,6 +131,7 @@ function App() {
           functionCloseModal={() => (
             setGameSettings(false),
             setSelectedTheme(""),
+            setSelectedThemeID(""),
             setSelectedDifficulty(""),
             setSelectedGameLenght("")
           )}

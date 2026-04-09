@@ -33,6 +33,8 @@ interface AppContextProps {
   setConfirmTheme: Dispatch<SetStateAction<boolean>>;
   selectedTheme: string;
   setSelectedTheme: Dispatch<SetStateAction<string>>;
+  selectedThemeID: string;
+  setSelectedThemeID: Dispatch<SetStateAction<string>>;
   gameSettings: boolean;
   setGameSettings: Dispatch<SetStateAction<boolean>>;
   selectedDifficulty: string;
@@ -56,6 +58,7 @@ export function AppContextProvider({ children }: AppContextProviderProps) {
   const [activePage, setActivePage] = useState("Home");
   const [confirmTheme, setConfirmTheme] = useState(false);
   const [selectedTheme, setSelectedTheme] = useState("");
+  const [selectedThemeID, setSelectedThemeID] = useState("");
   const [gameSettings, setGameSettings] = useState(false);
   const [selectedDifficulty, setSelectedDifficulty] = useState("");
   const [selectedGameLenght, setSelectedGameLenght] = useState("");
@@ -83,6 +86,8 @@ export function AppContextProvider({ children }: AppContextProviderProps) {
         setConfirmTheme,
         selectedTheme,
         setSelectedTheme,
+        selectedThemeID,
+        setSelectedThemeID,
         gameSettings,
         setGameSettings,
         selectedDifficulty,

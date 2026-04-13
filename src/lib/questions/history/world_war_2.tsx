@@ -201,4 +201,36 @@ export const questions: Question[] = [
       "Batalha de Kursk",
     ],
   },
+  {
+    id: "Q29",
+    text: "Qual cidade alemã foi dividida pelos aliados após o fim da guerra?",
+    correctAnswer: "Berlin",
+    wrongAnswers: ["Dresden", "Hamburgo", "Munique"],
+  },
+  {
+    id: "Q30",
+    text: "Qual fato levou à entrada dos Estados Unidos na Segunda Guerra?",
+    correctAnswer: "Ataque a Pearl Harbor",
+    wrongAnswers: [
+      "Naufrágio de um couraçado",
+      "Invasão alemã na Polônia",
+      "Pressão soviética",
+    ],
+  },
+  {
+    id: "Q31",
+    text: "Qual era o nome do ditador italiano durante a guerra?",
+    correctAnswer: "Benito Mussolini",
+    wrongAnswers: ["Philippe Pétain", "Giuseppe Volpi", "Adolf Hitler"],
+  },
+  {
+    id: "Q32",
+    text: "Qual das conferências abaixo dividiu a Alemanha em zonas de ocupação pelos Aliados?",
+    correctAnswer: "Conferência de Potsdam",
+    wrongAnswers: [
+      "Conferência de Paris",
+      "Conferência de Teerã",
+      "Conferência de Yalta",
+    ],
+  },
 ];

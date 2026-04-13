@@ -52,6 +52,7 @@ export const Qwiz_Themes: Record<CategoryName, { id: string; name: string }[]> =
       { id: "french_revolution", name: "French Revolution" },
       { id: "industrial_revolution", name: "Industrial Revolution" },
       { id: "world_war_1", name: "World War I" },
+      { id: "russian_revolution", name: "Russian Revolution" },
       { id: "world_war_2", name: "World War II" },
       { id: "cold_war", name: "Cold War" },
       { id: "brazil_history", name: "Brazil" },

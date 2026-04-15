@@ -60,7 +60,7 @@ export default function ModalGameSettings() {
         ></GameSettingsCard>
         <GameSettingsCard
           cardTitle={t("Long")}
-          cardDescription={t("20 Questions")}
+          cardDescription={t("15 Questions")}
           isSelected={selectedGameLenght == "Long"}
           onClickFunction={() => setSelectedGameLenght("Long")}
         ></GameSettingsCard>

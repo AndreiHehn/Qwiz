@@ -121,4 +121,24 @@ export const questions: Question[] = [
     correctAnswer: "Império Otomano",
     wrongAnswers: ["Império Persa", "Império Chinês", "Império Japonês"],
   },
+  {
+    id: "Q17",
+    text: "Qual o nome do acordo que encerrou a Primeira Guerra Mundial?",
+    correctAnswer: "Tratado de Versailles",
+    wrongAnswers: [
+      "Tratado de Brest-Litovski",
+      "Tratado de Paris",
+      "Tratado de Kiev",
+    ],
+  },
+  {
+    id: "Q18",
+    text: "Qual o nome do acordo que retirou a Rússia da Primeira Guerra Mundial?",
+    correctAnswer: "Tratado de Brest-Litovski",
+    wrongAnswers: [
+      "Tratado de Versailles",
+      "Tratado de Paris",
+      "Tratado de Kiev",
+    ],
+  },
 ];

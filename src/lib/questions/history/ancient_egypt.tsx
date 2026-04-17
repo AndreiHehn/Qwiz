@@ -1,0 +1,156 @@
+import type { Question } from "../../types";
+
+export const questions: Question[] = [
+  {
+    id: "Q1",
+    text: "Qual rio foi essencial para o desenvolvimento da civilização do Egito Antigo?",
+    correctAnswer: "Rio Nilo",
+    wrongAnswers: ["Rio Tigre", "Rio Eufrates", "Rio Jordão"],
+  },
+  {
+    id: "Q2",
+    text: "Quais estruturas eram conhecidas por sua forma e por servirem de túmulo para os faraós?",
+    correctAnswer: "Pirâmides",
+    wrongAnswers: ["Zigurates", "Arenas", "Templos"],
+  },
+  {
+    id: "Q3",
+    text: "Quais os nomes das três pirâmides mais conhecidas do Egito?",
+    correctAnswer: "Quéops, Queffren e Miquerinos",
+    wrongAnswers: [
+      "Quéops, Pirâmide Vermelha e Djoser",
+      "Queffren, Miquerinos e Djoser",
+      "Djoser, Pirâmide Vermelha e Pirâmide de Gizé",
+    ],
+  },
+  {
+    id: "Q4",
+    text: "Qual das pirâmides egípcias é conhecida como A Grande Pirâmide de Gizé?",
+    correctAnswer: "Quéops",
+    wrongAnswers: ["Miquerinos", "Queffren", "Djoser"],
+  },
+  {
+    id: "Q5",
+    text: "Qual o nome da primeira pirâmide a ser construída no Egito?",
+    correctAnswer: "Djoser",
+    wrongAnswers: ["Miquerinos", "Queffren", "Quéffren"],
+  },
+  {
+    id: "Q6",
+    text: "Qual material era usado pelos egípcios como suporte para escrita?",
+    correctAnswer: "Papiro",
+    wrongAnswers: ["Pergaminho", "Argila", "Bambu"],
+  },
+  {
+    id: "Q7",
+    text: "Na mitologia egípcia, qual deus era associado ao sol?",
+    correctAnswer: "Rá",
+    wrongAnswers: ["Anúbis", "Osíris", "Hórus"],
+  },
+  {
+    id: "Q8",
+    text: "Na mitologia egípcia, qual deus era representado com cabeça de chacal e ligado à mumificação?",
+    correctAnswer: "Anúbis",
+    wrongAnswers: ["Rá", "Hórus", "Toth"],
+  },
+  {
+    id: "Q9",
+    text: "Qual prática funerária egípcia consistia em preservar o corpo após a morte?",
+    correctAnswer: "Mumificação",
+    wrongAnswers: ["Cremação", "Sepultamento simples", "Embalsamento romano"],
+  },
+  {
+    id: "Q10",
+    text: "Qual rainha egípcia ficou famosa por sua relação com Júlio César e Marco Antônio?",
+    correctAnswer: "Cleópatra",
+    wrongAnswers: ["Nefertiti", "Hatshepsut", "Meritaten"],
+  },
+  {
+    id: "Q11",
+    text: "Qual deus egípcio era representado com cabeça de falcão?",
+    correctAnswer: "Hórus",
+    wrongAnswers: ["Anúbis", "Osíris", "Seth"],
+  },
+  {
+    id: "Q12",
+    text: "Por volta de que ano ocorreu a unificação do Alto e do Baixo Egito?",
+    correctAnswer: "3100 AC",
+    wrongAnswers: ["2800 AC", "2500 AC", "1800 AC"],
+  },
+  {
+    id: "Q13",
+    text: "Em que ano aproximado ocorreu a famosa Batalha de Kadesh entre egípcios e hititas?",
+    correctAnswer: "1274 AC",
+    wrongAnswers: ["1450 AC", "1100 AC", "900 AC"],
+  },
+  {
+    id: "Q14",
+    text: "Em que ano Alexandre, o Grande, conquistou o Egito?",
+    correctAnswer: "332 AC",
+    wrongAnswers: ["410 AC", "280 AC", "150 AC"],
+  },
+  {
+    id: "Q15",
+    text: "Qual o nome da cidade fundada em homenagem a Alexandre, o Grande?",
+    correctAnswer: "Alexandria",
+    wrongAnswers: ["Mênfis", "Tebas", "Cairo"],
+  },
+  {
+    id: "Q16",
+    text: "Qual o nome da batalha onde Cleópatra e Marco Antônio foram derrotados?",
+    correctAnswer: "Batalha de Áccio",
+    wrongAnswers: [
+      "Batalha de Mênfis",
+      "Batalha do Cairo",
+      "Batalha de Kadesh",
+    ],
+  },
+  {
+    id: "Q17",
+    text: "Em que ano iniciou a era do Egito Ptolemaico?",
+    correctAnswer: "332 AC",
+    wrongAnswers: ["228 AC", "312 AC", "115 AC"],
+  },
+  {
+    id: "Q18",
+    text: "Em que ano o Egito passou a ser uma província romana?",
+    correctAnswer: "30 AC",
+    wrongAnswers: ["47 AC", "12 AC", "12 DC"],
+  },
+  {
+    id: "Q19",
+    text: "A mando de qual faraó foi construído o templo de Abul-Simbel?",
+    correctAnswer: "Ramsés II",
+    wrongAnswers: ["Tutancâmon", "Seti I", "Ramsés I"],
+  },
+  {
+    id: "Q20",
+    text: "Qual sistema de escrita era utilizado pelos antigos egípcios?",
+    correctAnswer: "Hieróglifos",
+    wrongAnswers: ["Cuneiforme", "Alfabeto fenício", "Latim"],
+  },
+  {
+    id: "Q21",
+    text: "Como eram chamados os governantes do Egito Antigo?",
+    correctAnswer: "Faraós",
+    wrongAnswers: ["Imperadores", "Sultões", "Césares"],
+  },
+  {
+    id: "Q22",
+    text: "Qual período do calendário egípcio estava relacionado à epoca de inundações do Rio Nilo?",
+    correctAnswer: "Ahket",
+    wrongAnswers: ["Peret", "Shemu", "Aton"],
+  },
+  {
+    id: "Q23",
+    text: "Qual período do calendário egípcio estava relacionado à epoca do plantio?",
+    correctAnswer: "Peret",
+    wrongAnswers: ["Ahket", "Shemu", "Aton"],
+  },
+  {
+    id: "Q24",
+    text: "Qual período do calendário egípcio estava relacionado à epoca das colheitas?",
+    correctAnswer: "Shemu",
+    wrongAnswers: ["Aton", "Peret", "Ahket"],
+  },
+];

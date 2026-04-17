@@ -48,7 +48,7 @@ export const Qwiz_Themes: Record<CategoryName, { id: string; name: string }[]> =
       { id: "ancient_rome", name: "Ancient Rome" },
       { id: "ancient_age", name: "Ancient Age" },
       { id: "middle_ages", name: "Middle Ages" },
-      { id: "renaissance", name: "Renaissance" },
+      { id: "modern_age", name: "Modern Age" },
       { id: "french_revolution", name: "French Revolution" },
       { id: "industrial_revolution", name: "Industrial Revolution" },
       { id: "world_war_1", name: "World War I" },

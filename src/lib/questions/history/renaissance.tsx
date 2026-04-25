@@ -1,0 +1,241 @@
+import type { Question } from "../../types";
+
+export const questions: Question[] = [
+  {
+    id: "Q1",
+    text: "Por qual motivo o Renascimento leva este nome?",
+    correctAnswer: "Resgate da cultura greco-romana",
+    wrongAnswers: [
+      "Reconstrução da Europa após a Peste Negra",
+      "Fim da Guerra dos Cem Anos",
+      "Ressurgimento da Igreja Católica",
+    ],
+  },
+  {
+    id: "Q2",
+    text: "A qual cidade italiana é atribuída o surgimento do Renascimento?",
+    correctAnswer: "Florença",
+    wrongAnswers: ["Roma", "Milão", "Veneza"],
+  },
+  {
+    id: "Q3",
+    text: "Qual família foi a principal patrocinadora do Renascimento em Florença?",
+    correctAnswer: "Médici",
+    wrongAnswers: ["Maquiavel", "Bórgia", "Aragão"],
+  },
+  {
+    id: "Q4",
+    text: "Qual o termo italiano para definir a primeira fase do Renascimento, no século XIV?",
+    correctAnswer: "Trecento",
+    wrongAnswers: ["Quattrocento", "Cinquecento", "Ducento"],
+  },
+  {
+    id: "Q5",
+    text: "Qual artista abaixo foi o autor de 'A Divina Comédia'?",
+    correctAnswer: "Dante Alighieri",
+    wrongAnswers: ["William Shakespeare", "Petrarca", "Sandro Botticelli"],
+  },
+  {
+    id: "Q6",
+    text: "Qual invenção possibilitou a divulgação do conhecimento para um maior público?",
+    correctAnswer: "Imprensa",
+    wrongAnswers: ["Telégrafo", "Código Morse", "Máquina de escrever"],
+  },
+  {
+    id: "Q7",
+    text: "Quem foi o inventor da prensa, ou imprensa, por volta do ano de 1450?",
+    correctAnswer: "Johannes Gutenberg",
+    wrongAnswers: ["Telégrafo", "Código Morse", "Máquina de escrever"],
+  },
+  {
+    id: "Q8",
+    text: "Qual o nome do primeiro grande livro a ser impresso?",
+    correctAnswer: "A Bíblia de Gutenberg",
+    wrongAnswers: ["Manuscritos de Platão", "Manuscritos Socráticos", "Hamlet"],
+  },
+  {
+    id: "Q9",
+    text: "Qual artista é o autor da obra 'O Nascimento de Vênus'?",
+    correctAnswer: "Sandro Botticelli",
+    wrongAnswers: ["Leonardo da Vinci", "Michelângelo", "Rafael Sanzio"],
+  },
+  {
+    id: "Q10",
+    text: "Qual cidade passou a ser o epicentro do Renascimento, após a morte de Lorenzo Médici?",
+    correctAnswer: "Roma",
+    wrongAnswers: ["Nápoles", "Veneza", "Gênova"],
+  },
+  {
+    id: "Q11",
+    text: "Qual famoso artista do Renascimento é responsável pela obra 'Mona Lisa'?",
+    correctAnswer: "Leonardo da Vinci",
+    wrongAnswers: ["Michelângelo", "Sandro Botticelli", "Rafael Sanzio"],
+  },
+  {
+    id: "Q12",
+    text: "Qual famoso artista do Renascimento é responsável pela obra 'A Última Ceia'?",
+    correctAnswer: "Leonardo da Vinci",
+    wrongAnswers: ["Michelângelo", "Sandro Botticelli", "Rafael Sanzio"],
+  },
+  {
+    id: "Q13",
+    text: "Qual das obras abaixo não é de autoria de Leonardo da Vinci?",
+    correctAnswer: "O Nascimento de Vênus",
+    wrongAnswers: ["A Última Ceia", "O Homem Vitruviano", "Salvator Mundi"],
+  },
+  {
+    id: "Q14",
+    text: "Qual dos oficios abaixo não era exercido por Leonardo da Vinci?",
+    correctAnswer: "Mercador",
+    wrongAnswers: ["Engenheiro", "Anatomista", "Escultor"],
+  },
+  {
+    id: "Q15",
+    text: "Em que ano morreu Leonardo da Vinci?",
+    correctAnswer: "1519",
+    wrongAnswers: ["1503", "1510", "1514"],
+  },
+  {
+    id: "Q16",
+    text: "A escultura 'Davi' é de autoria de qual artista renascentista?",
+    correctAnswer: "Michelângelo",
+    wrongAnswers: ["Leonardo da Vinci", "Rafael Sanzio", "Nicolau Maquiavel"],
+  },
+  {
+    id: "Q17",
+    text: "Quem foi o artista responsável por pintar o teto da Capela Sistina, em Roma?",
+    correctAnswer: "Michelângelo",
+    wrongAnswers: ["Leonardo da Vinci", "Rafael Sanzio", "Sandro Botticelli"],
+  },
+  {
+    id: "Q18",
+    text: "Entre quais anos Michelângelo pintou o teto da Capela Sistina?",
+    correctAnswer: "1508 - 1512",
+    wrongAnswers: ["1508 - 1514", "1512 - 1516", "1504 - 1512"],
+  },
+  {
+    id: "Q19",
+    text: "Qual o Papa que contratou Michelângelo para o trabalho na Capela Sistina?",
+    correctAnswer: "Júlio II",
+    wrongAnswers: ["Sisto IV", "Pio III", "Leão X"],
+  },
+  {
+    id: "Q20",
+    text: "Qual das obras abaixo não é de autoria de Rafael Sanzio?",
+    correctAnswer: "A Última Ceia",
+    wrongAnswers: [
+      "Casamento da Virgem",
+      "Escola de Atenas",
+      "Ressurreição de Cristo",
+    ],
+  },
+  {
+    id: "Q21",
+    text: "Quem é o autor da obra 'O Príncipe'?",
+    correctAnswer: "Nicolau Maquiavel",
+    wrongAnswers: ["Erasmo de Roterdã", "Dante Alighieri", "Petrarca"],
+  },
+  {
+    id: "Q22",
+    text: "Quem é o conhecido como o fundador do pensamento político moderno?",
+    correctAnswer: "Nicolau Maquiavel",
+    wrongAnswers: ["Voltaire", "John Locke", "Galileu Galilei"],
+  },
+  {
+    id: "Q23",
+    text: "Qual o nome da teoria que defende que o Sol está no centro do Universo?",
+    correctAnswer: "Heliocentrismo",
+    wrongAnswers: ["Geocentrismo", "Teoria do Big Bang", "Copernismo"],
+  },
+  {
+    id: "Q24",
+    text: "Qual cientista do Renascimento ficou conhecido por criar a Teoria do Heliocentrismo??",
+    correctAnswer: "Nicolau Copérnico",
+    wrongAnswers: ["Nicolau Maquiavel", "Isaac Newton", "Galileu Galilei"],
+  },
+  {
+    id: "Q25",
+    text: "Qual cientista do Renascimento ficou conhecido por defender a Teoria do Heliocentrismo?",
+    correctAnswer: "Galileu Galilei",
+    wrongAnswers: ["Nicolau Copérnico", "Isaac Newton", "Aristóteles"],
+  },
+  {
+    id: "Q26",
+    text: "Qual cientista renascentista ficou famoso por observar as luas de Júpiter pelo telescópio?",
+    correctAnswer: "Galileu Galilei",
+    wrongAnswers: ["Nicolau Copérnico", "Isaac Newton", "Aristóteles"],
+  },
+  {
+    id: "Q27",
+    text: "Por qual motivo Galileu Galilei foi julgado pela Igreja Católica?",
+    correctAnswer: "A Igreja defendia o Geocentrismo e ele, o Heliocentrismo",
+    wrongAnswers: [
+      "A Igreja defendia o Heliocentrismo e ele, o Geocentrismo",
+      "Incitou uma revolta contra a Igreja",
+      "Queimou todos os seus manuscritos",
+    ],
+  },
+  {
+    id: "Q28",
+    text: "Qual era a principal característica política da Itália durante o Renascimento?",
+    correctAnswer: "Divisão em cidades-estado independentes",
+    wrongAnswers: [
+      "Unificação sob um único rei",
+      "Domínio do Sacro Império Romano-Germânico",
+      "Sistema feudal centralizado",
+    ],
+  },
+  {
+    id: "Q29",
+    text: "Sob o comando de qual imperador ocorreu o Saque de Roma?",
+    correctAnswer: "Carlos V",
+    wrongAnswers: ["Luís XIV", "Henrique VIII", "Fernando de Aragão"],
+  },
+  {
+    id: "Q30",
+    text: "Em que ano ocorreu o Saque de Roma?",
+    correctAnswer: "1527",
+    wrongAnswers: ["1503", "1518", "1536"],
+  },
+  {
+    id: "Q31",
+    text: "Qual instituição tinha grande poder político e religioso durante o Renascimento?",
+    correctAnswer: "Igreja Católica",
+    wrongAnswers: [
+      "Parlamento Europeu",
+      "Liga Hanseática",
+      "Burguesia mercantil",
+    ],
+  },
+  {
+    id: "Q32",
+    text: "O que era o mecenato no contexto do Renascimento?",
+    correctAnswer: "Patrocínio de artistas e intelectuais por pessoas ricas",
+    wrongAnswers: [
+      "Venda de obras de arte em mercados públicos",
+      "Sistema de impostos sobre artistas",
+      "Controle da arte pela Igreja exclusivamente",
+    ],
+  },
+  {
+    id: "Q33",
+    text: "Qual foi uma consequência indireta das Grandes Navegações para o Renascimento italiano?",
+    correctAnswer:
+      "Deslocamento do centro econômico do Mediterrâneo para o Atlântico",
+    wrongAnswers: [
+      "Fim imediato do Renascimento",
+      "Unificação política da Itália",
+      "Fim do comércio europeu",
+    ],
+  },
+  {
+    id: "Q34",
+    text: "Qual mudança cultural marcou o Renascimento em relação à Idade Média?",
+    correctAnswer: "Valorização do ser humano",
+    wrongAnswers: [
+      "Aumento do poder feudal",
+      "Fim da produção artística",
+      "Retorno ao pensamento exclusivamente religioso",
+    ],
+  },
+];

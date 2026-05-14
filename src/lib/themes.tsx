@@ -60,6 +60,8 @@ export const Qwiz_Themes: Record<CategoryName, { id: string; name: string }[]> =
       { id: "brazil_history", name: "Brazil" },
       { id: "latin_america_history", name: "Latin America" },
       { id: "united_states_history", name: "United States" },
+
+      { id: "historic_personalities", name: "Historic Personalities" },
     ],
 
     Entertainment: [

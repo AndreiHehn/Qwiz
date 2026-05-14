@@ -971,12 +971,12 @@ export const questions: Question[] = [
       "Estatuto do Trabalhador Rural",
     ],
   },
-  {
-    id: "Q126",
-    text: "Em que ano se encerrou a Ditadura do Estado Novo?",
-    correctAnswer: "1945",
-    wrongAnswers: ["1942", "1947", "1953"],
-  },
+  // {
+  //   id: "Q126",
+  //   text: "Em que ano se encerrou a Ditadura do Estado Novo?",
+  //   correctAnswer: "1945",
+  //   wrongAnswers: ["1942", "1947", "1953"],
+  // },
   {
     id: "Q127",
     text: "Em que ano se encerrou a Ditadura do Estado Novo?",
@@ -1059,7 +1059,7 @@ export const questions: Question[] = [
   },
   {
     id: "Q137",
-    text: "Em que ano foi inaugurada Brasília, a nova capital do Brasil?",
+    text: "Em que ano foi inaugurada Brasília, a atual capital do Brasil?",
     correctAnswer: "1960",
     wrongAnswers: ["1957", "1963", "1961"],
   },

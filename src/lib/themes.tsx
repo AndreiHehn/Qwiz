@@ -6,13 +6,12 @@ export const Qwiz_Themes: Record<CategoryName, { id: string; name: string }[]> =
       { id: "brazilian_football", name: "Brazilian Football" },
       { id: "english_football", name: "English Football" },
       { id: "spanish_football", name: "Spanish Football" },
+      { id: "german_football", name: "German Football" },
       { id: "italian_football", name: "Italian Football" },
       { id: "french_football", name: "French Football" },
       { id: "fifa_world_cups", name: "FIFA World Cups" },
       { id: "eurocup", name: "Eurocup" },
       { id: "copa_america", name: "Copa América" },
-      { id: "african_cup_of_nations", name: "African Cup of Nations" },
-      { id: "asian_cup", name: "Asian Cup" },
       { id: "uefa_champions_league", name: "UEFA Champions League" },
       { id: "conmebol_libertadores", name: "CONMEBOL Libertadores" },
       { id: "nba", name: "NBA" },
@@ -20,14 +19,23 @@ export const Qwiz_Themes: Record<CategoryName, { id: string; name: string }[]> =
       { id: "tennis", name: "Tennis" },
       { id: "formula_1", name: "Formula 1" },
       { id: "olympics", name: "Olympics" },
+
+      { id: "football_players", name: "Football Players" },
+      { id: "european_teams", name: "European Teams" },
+      { id: "american_teams", name: "American Teams" },
+      { id: "asian_teams", name: "Asian Teams" },
     ],
 
     Geography: [
-      { id: "country_flags", name: "Country Flags" },
       { id: "capital_cities", name: "Capital Cities" },
-      { id: "world_map", name: "World Map" },
+      { id: "africa", name: "Africa" },
+      { id: "americas", name: "Americas" },
+      { id: "asia", name: "Asia" },
+      { id: "europe", name: "Europe" },
       { id: "tourist_attractions", name: "Tourist Attractions" },
       { id: "physical_geography", name: "Physical Geography" },
+
+      { id: "country_flags", name: "Country Flags" },
     ],
 
     Sciences: [
